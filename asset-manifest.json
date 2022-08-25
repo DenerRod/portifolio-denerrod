@@ -1,16 +1,13 @@
 {
   "files": {
     "main.css": "/portifolio-denerrod/static/css/main.073c9b0a.css",
-    "main.js": "/portifolio-denerrod/static/js/main.a353694d.js",
-    "static/js/787.fa04d9cd.chunk.js": "/portifolio-denerrod/static/js/787.fa04d9cd.chunk.js",
-    "static/media/logo.svg": "/portifolio-denerrod/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.js": "/portifolio-denerrod/static/js/main.059a9bba.js",
     "index.html": "/portifolio-denerrod/index.html",
     "main.073c9b0a.css.map": "/portifolio-denerrod/static/css/main.073c9b0a.css.map",
-    "main.a353694d.js.map": "/portifolio-denerrod/static/js/main.a353694d.js.map",
-    "787.fa04d9cd.chunk.js.map": "/portifolio-denerrod/static/js/787.fa04d9cd.chunk.js.map"
+    "main.059a9bba.js.map": "/portifolio-denerrod/static/js/main.059a9bba.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.a353694d.js"
+    "static/js/main.059a9bba.js"
   ]
 }
