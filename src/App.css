@@ -1,9 +1,37 @@
 * {
   background-color: rgb(4, 4, 61);
   color: rgb(223, 95, 37);
-  text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+.home-love {
+  text-align: center;
+}
+
+.home-love img {
+  border-radius: 8px;
+  width: 250px;
+}
+
+#home-title {
+  text-align: center;
+}
+
+#btnLove button {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  padding: 20px;
+  margin-top:50px;
+  text-align: center;
+  border-radius: 20px;
+  border: 5px solid white;
+}
+
+#loveText {
+  color: white;
+  text-align: center;
 }
 
 #color-palette {

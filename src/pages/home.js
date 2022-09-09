@@ -6,13 +6,10 @@ class home extends React.Component {
     return (
         <div className="home">
             <header>
-                <h1>Bem-vindo ao meu Portifolio</h1>
+                <h1 id="home-title">Bem-vindo ao meu Portifolio</h1>
                 <ul> Projetos :
                     <li><Link to="/projectPixelsArt">Projeto Pixels Art</Link></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li><Link to="/projetoAmor">Projeto pro meu amor</Link></li>
                 </ul>
             </header>
         </div>
