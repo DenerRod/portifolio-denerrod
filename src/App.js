@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <Route exact path="/portifolio-denerrod" component={ home } />
-      <Route path="/projectSolarSystem" component={ projectPixelsArt } />
+      <Route path="/projectPixelsArt" component={ projectPixelsArt } />
     </div>
   );
 }

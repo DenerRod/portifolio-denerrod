@@ -8,7 +8,7 @@ class home extends React.Component {
             <header>
                 <h1>Bem-vindo ao meu Portifolio</h1>
                 <ul> Projetos :
-                    <li><Link to="/projectSolarSystem">Projeto Solar System</Link></li>
+                    <li><Link to="/projectPixelsArt">Projeto Pixels Art</Link></li>
                     <li></li>
                     <li></li>
                     <li></li>
