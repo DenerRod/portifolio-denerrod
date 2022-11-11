@@ -1,67 +1,76 @@
 * {
-  background-color: rgb(4, 4, 61);
-  color: rgb(223, 95, 37);
   margin-left: auto;
   margin-right: auto;
 }
-
-.home-love {
-  text-align: center;
-}
-
-.home-love img {
-  border-radius: 8px;
-  width: 250px;
-}
+ body {
+  background-image: url(../src/images/pexels-gradienta-7135024.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+ }
 
 #home-title {
   text-align: center;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 50px;
+  color: white;
 }
 
-#btnLove button {
-  font-weight: bold;
+.home-list {
+  font-family:'Courier New', Courier, monospace;
+  font-size: 30px;
+  color: white;
+}
+
+.listProject {
+  margin-top: -20px;
+  font-family:'Courier New', Courier, monospace;
   font-size: 20px;
   color: white;
-  padding: 20px;
-  margin-top:50px;
-  text-align: center;
-  border-radius: 20px;
-  border: 5px solid white;
 }
 
-#loveText {
-  color: white;
+#title {
   text-align: center;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 50px;
+  color: white;
 }
 
 #color-palette {
-  height: 50px;
+  text-align: center;
+}
+
+.btnClear {
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-left: 45.5%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  border: white solid 4px;
+  color: rgb(66, 66, 66);
+  padding: 10px;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+}
+
+.btnClear:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+
+#pixel-board { 
+  width: 210px;
+  height: 210px;   
 }
 
 .color {
   display: inline-block;
   width: 40px;
   height: 40px;
-  border: black solid 1px;
-}
-
-
-.black {
-  background-color: black;
-}
-.green {
-  background-color: green;
-}
-.blue {
-  background-color: blue;
-}
-.yellow {
-  background-color: yellow;
-}
-
-#pixel-board { 
-  width: 210px;
-  height: 210px;   
+  border: rgb(197, 1, 223) solid 7px;
+  border-radius: 50px;
 }
 
 .pixel {
@@ -71,6 +80,54 @@
   border: 1px black solid;
 }
 
+.black {
+  background-color: black;
+}
+.black:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+
+.green {
+  background-color: green;
+}
+.green:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+
+
+.blue {
+  background-color: blue;
+}
+.blue:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+
+
+.yellow {
+  background-color: yellow;
+}
+.yellow:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+
 .white {
   background-color: white;
+}
+.white:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
 }

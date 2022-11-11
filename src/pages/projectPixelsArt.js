@@ -3,25 +3,36 @@ import React from 'react';
 class projectPixelsArt extends React.Component {
   constructor() {
     super()
-    this.handleClick = this.handleClick.bind(this)
+
     this.state = {
       corSelecionada: '',
     }
+
+    this.selectColor = this.selectColor.bind(this)
   };
 
-  handleClick(event) {
-    this.setState({ corSelecionada: event.target.classList[0] })
+ async selectColor(event) {
+    await this.setState({ corSelecionada:  event.target.classList[0] })
+    console.log(this.state.corSelecionada);
   };
 
-  aplicaCor(event) {
-    const corAplicada = this.state
 
-    corAplicada.classList = 'pixel ' + corAplicada + 'black';
+  applyColor = (event) => {
+    event.target.classList = `pixel ${this.state.corSelecionada}`;
+  }
+
+  clearAll = (event) => {
+    const element = document.querySelectorAll('.pixel');
+    console.log(element[0].classList);
+
+    for (let i = 0; i < element.length; i++) {
+      element[i].classList = 'pixel white';
+    };
   }
 
 
   render() {
-    console.log(this.state);
+    const { applyColor, selectColor, clearAll } = this;
     return (
       <div>
       <header>
@@ -31,44 +42,47 @@ class projectPixelsArt extends React.Component {
       </header><section>
 
           <div id="color-palette">
-            <div class="black color selected " onClick={ this.handleClick }></div>
-            <div class="green color " onClick={ this.handleClick }></div>
-            <div class="blue color " onClick={ this.handleClick }></div>
-            <div class="yellow color" onClick={ this.handleClick }></div>
+            <div className="white color" onClick={ selectColor }></div>
+            <div className="black color selected " onClick={ selectColor }></div>
+            <div className="green color " onClick={ selectColor }></div>
+            <div className="blue color " onClick={ selectColor }></div>
+            <div className="yellow color" onClick={ selectColor }></div>
           </div>
+
+          <button className="btnClear" onClick={ clearAll }>Limpar Tudo</button>
 
         </section><main>
 
           <section id="pixel-board">
-            <div class="pixel white" onClick={ this.aplicaCor }></div>
-            <div class="pixel white" onClick={ this.aplicaCor }></div>
-            <div class="pixel white" onClick={ this.aplicaCor }></div>
-            <div class="pixel white" onClick={ this.aplicaCor }></div>
-            <div class="pixel white" onClick={ this.aplicaCor }></div>
+            <div className="pixel white" onClick={ applyColor }></div>
+            <div className="pixel white" onClick={ applyColor }></div>
+            <div className="pixel white" onClick={ applyColor }></div>
+            <div className="pixel white" onClick={ applyColor }></div>
+            <div className="pixel white" onClick={ applyColor }></div>
 
-            <div class="pixel white"></div>
-            <div class="pixel white"></div>
-            <div class="pixel white"></div>
-            <div class="pixel white"></div>
-            <div class="pixel white"></div>
+            <div className="pixel white" onClick={ applyColor }></div>
+            <div className="pixel white" onClick={ applyColor }></div>
+            <div className="pixel white" onClick={ applyColor }></div>
+            <div className="pixel white" onClick={ applyColor }></div>
+            <div className="pixel white" onClick={ applyColor }></div>
 
-            <div class="pixel white"></div>
-            <div class="pixel white"></div>
-            <div class="pixel white"></div>
-            <div class="pixel white"></div>
-            <div class="pixel white"></div>
+            <div className="pixel white" onClick={ applyColor }></div>
+            <div className="pixel white" onClick={ applyColor }></div>
+            <div className="pixel white" onClick={ applyColor }></div>
+            <div className="pixel white" onClick={ applyColor }></div>
+            <div className="pixel white" onClick={ applyColor }></div>
 
-            <div class="pixel white"></div>
-            <div class="pixel white"></div>
-            <div class="pixel white"></div>
-            <div class="pixel white"></div>
-            <div class="pixel white"></div>
+            <div className="pixel white" onClick={ applyColor }></div>
+            <div className="pixel white" onClick={ applyColor }></div>
+            <div className="pixel white" onClick={ applyColor }></div>
+            <div className="pixel white" onClick={ applyColor }></div>
+            <div className="pixel white" onClick={ applyColor }></div>
 
-            <div class="pixel white"></div>
-            <div class="pixel white"></div>
-            <div class="pixel white"></div>
-            <div class="pixel white"></div>
-            <div class="pixel white"></div>
+            <div className="pixel white" onClick={ applyColor }></div>
+            <div className="pixel white" onClick={ applyColor }></div>
+            <div className="pixel white" onClick={ applyColor }></div>
+            <div className="pixel white" onClick={ applyColor }></div>
+            <div className="pixel white" onClick={ applyColor }></div>
 
 
           </section>
