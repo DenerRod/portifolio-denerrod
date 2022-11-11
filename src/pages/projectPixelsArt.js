@@ -5,7 +5,7 @@ class projectPixelsArt extends React.Component {
     super()
 
     this.state = {
-      corSelecionada: '',
+      corSelecionada: 'white',
     }
 
     this.selectColor = this.selectColor.bind(this)
@@ -39,7 +39,7 @@ class projectPixelsArt extends React.Component {
 
         <h1 id="title">Paleta de Cores</h1>
 
-      </header><section>
+      </header><section id="contentSection">
 
           <div id="color-palette">
             <div className="white color" onClick={ selectColor }></div>

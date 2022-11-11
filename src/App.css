@@ -3,9 +3,13 @@
   margin-right: auto;
 }
  body {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
   background-image: url(../src/images/pexels-gradienta-7135024.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  
  }
 
 #home-title {
@@ -39,11 +43,14 @@
   text-align: center;
 }
 
+#contentSection {
+  text-align: center;
+}
+
 .btnClear {
   font-size: 15px;
   font-weight: bold;
   border-radius: 10px;
-  margin-left: 45.5%;
   margin-bottom: 50px;
   margin-top: 50px;
   border: white solid 4px;
@@ -61,7 +68,7 @@
 }
 
 #pixel-board { 
-  width: 210px;
+  width: 215px;
   height: 210px;   
 }
 
