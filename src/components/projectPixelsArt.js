@@ -21,7 +21,7 @@ class projectPixelsArt extends React.Component {
     event.target.classList = `pixel ${this.state.corSelecionada}`;
   }
 
-  clearAll = (event) => {
+  clearAll = () => {
     const element = document.querySelectorAll('.pixel');
     console.log(element[0].classList);
 
@@ -34,12 +34,13 @@ class projectPixelsArt extends React.Component {
   render() {
     const { applyColor, selectColor, clearAll } = this;
     return (
-      <div>
+      <div className="home">
       <header>
 
         <h1 id="title">Paleta de Cores</h1>
 
-      </header><section id="contentSection">
+      </header>
+      <section id="contentSection">
 
           <div id="color-palette">
             <div className="white color" onClick={ selectColor }></div>
@@ -51,7 +52,8 @@ class projectPixelsArt extends React.Component {
 
           <button className="btnClear" onClick={ clearAll }>Limpar Tudo</button>
 
-        </section><main>
+        </section>
+        <main>
 
           <section id="pixel-board">
             <div className="pixel white" onClick={ applyColor }></div>
