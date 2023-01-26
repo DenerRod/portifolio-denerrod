@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/portifolio-denerrod/static/css/main.27999475.css",
-    "main.js": "/portifolio-denerrod/static/js/main.ce583e62.js",
-    "static/media/pexels-gradienta-7135024.jpg": "/portifolio-denerrod/static/media/pexels-gradienta-7135024.548ac85f1648274662a4.jpg",
+    "main.css": "/portifolio-denerrod/static/css/main.6e2ecdfa.css",
+    "main.js": "/portifolio-denerrod/static/js/main.d1393c23.js",
+    "static/media/trybeWartsHeaderLogo-removebg-preview.png": "/portifolio-denerrod/static/media/trybeWartsHeaderLogo-removebg-preview.81f35ab31eae7f116592.png",
+    "static/media/seachIconWhite.png": "/portifolio-denerrod/static/media/seachIconWhite.00118c6e26245eb7f00d.png",
     "index.html": "/portifolio-denerrod/index.html",
-    "main.27999475.css.map": "/portifolio-denerrod/static/css/main.27999475.css.map",
-    "main.ce583e62.js.map": "/portifolio-denerrod/static/js/main.ce583e62.js.map"
+    "main.6e2ecdfa.css.map": "/portifolio-denerrod/static/css/main.6e2ecdfa.css.map",
+    "main.d1393c23.js.map": "/portifolio-denerrod/static/js/main.d1393c23.js.map"
   },
   "entrypoints": [
-    "static/css/main.27999475.css",
-    "static/js/main.ce583e62.js"
+    "static/css/main.6e2ecdfa.css",
+    "static/js/main.d1393c23.js"
   ]
 }
