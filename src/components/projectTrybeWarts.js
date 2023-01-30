@@ -135,7 +135,7 @@ class projectTrybeWarts extends React.Component {
                         </form>
                         <img id="trybewarts-forms-logo" src={trybewartsBody} alt="" />
                         </main>
-                    <footer>Direitos reservados à Trybewarts©</footer>
+                    <footer className="footerTW">Direitos reservados à Trybewarts©</footer>
             </div>
         )
     }

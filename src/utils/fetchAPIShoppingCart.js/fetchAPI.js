@@ -16,3 +16,14 @@ export async function searchProducts(searchItem) {
   return data;
 }
 
+export async function getAllCategories() {
+  const urlAll = `https://api.mercadolibre.com/sites/MLB/categories`
+
+  const response = await fetch(urlAll);
+  const data = await response.json();
+
+  return data;
+}
+
+
+
