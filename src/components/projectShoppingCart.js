@@ -1,33 +1,39 @@
 import React from "react";
 import imgSearch from "../images/imgShoppingCart/seachIconWhite.png";
-import imgCartShopping from "../images/imgShoppingCart/carrinho-de-compras.png"
+import imgCartShopping from "../images/imgShoppingCart/carrinho-de-compras.png";
 import {
   getAllProduts,
   searchProducts,
   getAllCategories,
 } from "../utils/fetchAPIShoppingCart.js/fetchAPI";
-import cartIcon from "../images/imgShoppingCart/cartIcon.png"
-import iconCartList from "../images/imgShoppingCart/iconCartList.png"
-import Loading from "./Loading/loading";
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
+import iconCartList from "../images/imgShoppingCart/iconCartList.png";
+/* import Loading from "./Loading/loading"; */
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
 
 class ShoppingCart extends React.Component {
   state = {
-    carrinho: "",
-    showLoading: false,
+    carrinho: 0,
+    /* showLoading: false, */
   };
 
   createCustomElement = (element, className, innerText) => {
+    const { handleClickAddToCart } = this;
     const product = document.createElement(element);
     product.className = className;
-    if (className === "item__title" || innerText === "Adicionar ao carrinho!") {
+    if (className === "item__add" /* || className === "item__buy" */) {
+      product.addEventListener("click", handleClickAddToCart);
+    }
+    if (
+      className === "item__title" ||
+      className === "item__buy" ||
+      className === "item__add" ||
+      className === "itemCart"
+    ) {
       product.innerText = innerText;
-    } else {
-      product.innerText = `${innerText.toLocaleString("pt-BR", {
-        style: "currency",
-        currency: "BRL",
-      })}`;
+    }
+    if (className === "item__price") {
+      product.innerText = `R$ ${innerText}`;
     }
     return product;
   };
@@ -39,7 +45,7 @@ class ShoppingCart extends React.Component {
     return product;
   };
 
-  createProductImageElement = (imageSource) => {
+  createProductImageElement = (imageSource, className = "cartIcon") => {
     const img = document.createElement("img");
     img.className = "item__image";
     img.src = imageSource;
@@ -60,21 +66,28 @@ class ShoppingCart extends React.Component {
 
     divSection.appendChild(
       createCustomElement("button", "item__buy", "Comprar")
-    )
-    
-    divSection.appendChild(
-      createCustomElement("button", "item__add", "Adicionar ao carrinho")
-    ).appendChild(createCustomElement("img", "cartIcon", "img")).src = cartIcon;
+    );
+
+    divSection
+      .appendChild(
+        createCustomElement("button", "item__add", "Adicionar ao carrinho")
+      )
+      .appendChild(createCustomElement("img", "cartIcon", "img")).src =
+      iconCartList;
     return section;
   };
 
   componentDidMount = async () => {
-    this.setState({showLoading: true})
+    /*     this.setState({showLoading: true})
     setInterval(() => {
       this.setState({showLoading: false});
-    }, 400)
+    }, 400) */
 
-    const { createProductItemElement, createCategoryOptions, handleClickCategory } = this;
+    const {
+      createProductItemElement,
+      createCategoryOptions,
+      handleClickCategory,
+    } = this;
     const products = await getAllProduts();
     const { results } = await products;
     results.forEach((product) => {
@@ -89,10 +102,17 @@ class ShoppingCart extends React.Component {
       const { name } = category;
 
       if (name !== "Mais Categorias") {
-        const optionCategory = createCategoryOptions("li", "optionCategory", name);
-        document.querySelector(".title-options").appendChild(optionCategory).addEventListener("click", handleClickCategory);
+        const optionCategory = createCategoryOptions(
+          "p",
+          "optionCategory",
+          name
+        );
+        document
+          .querySelector(".title-options")
+          .appendChild(optionCategory)
+          .addEventListener("click", handleClickCategory);
       }
-    })
+    });
   };
 
   newSearchResults = () => {
@@ -100,19 +120,19 @@ class ShoppingCart extends React.Component {
     existingItems.forEach((item) => {
       item.remove();
     });
-    this.setState({ showLoading: true });
+    /*     this.setState({ showLoading: true }); */
   };
 
   handleClickSearch = async () => {
-    const { name } = this.props
+    const { name } = this.props;
     const { createProductItemElement, newSearchResults } = this;
     const getInputSearch = document.querySelector(".searchInput");
     newSearchResults();
-    if (getInputSearch.value === '') {
-      alert(`${name}, insira o nome do produto !`)
-      this.componentDidMount()
+    if (getInputSearch.value === "") {
+      alert(`${name}, insira o nome do produto !`);
+      this.componentDidMount();
     }
-    
+
     const products = await searchProducts(getInputSearch.value);
     /* console.log(products.results); */
     const { results } = await products;
@@ -121,7 +141,7 @@ class ShoppingCart extends React.Component {
 
       const itemProduct = createProductItemElement({ name, image, price });
       document.querySelector(".items").appendChild(itemProduct);
-      this.setState({ showLoading: false });
+      /* this.setState({ showLoading: false }); */
     });
   };
 
@@ -137,29 +157,85 @@ class ShoppingCart extends React.Component {
 
       const itemProduct = createProductItemElement({ name, image, price });
       document.querySelector(".items").appendChild(itemProduct);
-      this.setState({ showLoading: false });
+      /* this.setState({ showLoading: false }); */
     });
-  }
+  };
+
+  handleClickAddToCart = (event) => {
+    const { createCustomElement } = this;
+    const { carrinho } = this.state;
+
+    const itemSelector = event.composedPath()[2].childNodes[1].innerHTML;
+    const imgItemSelector = event.composedPath()[2].childNodes[0].src;
+    const priceItemSelector = event.composedPath()[2].childNodes[2].innerHTML;
+
+    console.log(priceItemSelector);
+
+    const totalPrice = parseFloat(priceItemSelector.slice(3, 14));
+
+    console.log(totalPrice);
+
+    if (carrinho === 0) {
+      this.setState({}, () => {
+        this.setState({ carrinho: totalPrice });
+      });
+    } else {
+      this.setState((prevState) => ({
+        ...prevState.carrinho,
+        carrinho: prevState.carrinho + totalPrice,
+      }));
+    }
+
+    const divCart = document.querySelector(".cart-itens");
+
+    divCart.appendChild(createCustomElement("img", "imgItemCart", "img")).src =
+      imgItemSelector;
+
+    divCart.appendChild(createCustomElement("p", "itemCart", itemSelector));
+  };
+
+  clearCart = () => {
+    const imgItem = document.querySelectorAll(".imgItemCart");
+    const titleItem = document.querySelectorAll(".itemCart");
+
+    console.log(imgItem);
+    console.log(titleItem);
+
+    for (let i = 0; i < imgItem.length; i++) {
+      imgItem[i].remove();
+    }
+
+    for (let i = 0; i < titleItem.length; i++) {
+      titleItem[i].remove();
+    }
+
+    this.setState({
+      carrinho: 0,
+    });
+  };
 
   render() {
-    const { showLoading } = this.state;
+    const { carrinho /* , showLoading */ } = this.state;
     return (
       <div className="bodyCart">
         <header className="shopping-header">
-          <h1 id="shopping-header-title">ShoppingCart</h1>
-          <img src={ imgCartShopping } alt="ShoppingCart" id="img-shopping" />
 
-          <form action="" className="trybewarts-login">
-            <input
-              type="text"
-              className="searchInput"
-              name="search"
-              placeholder="Digite nome do produto"
-              onClick={this.createProducts}
-            />
-          </form>
-          
-          <button
+          <div className="divHeaderTitle">
+            <h1 id="shopping-header-title">ShoppingCart</h1>
+            <img src={imgCartShopping} alt="ShoppingCart" id="img-shopping" />
+          </div>
+
+          <div className="divHeaderForm">
+            <form action="">
+              <input
+                type="text"
+                className="searchInput"
+                name="search"
+                placeholder="Digite nome do produto"
+                onClick={this.createProducts}
+              />
+            </form>
+            <button
               type="button"
               className="btn-search"
               onClick={this.handleClickSearch}
@@ -170,29 +246,52 @@ class ShoppingCart extends React.Component {
                 className="shopping-search-icon"
               />
             </button>
+          </div>
+          
         </header>
 
         <div className="bodyShopping">
-
           <div className="container-categories">
-            <ul className="title-options">Categorias</ul>
+            <div>
+              <h1 className="title-options">Categorias</h1>
+            </div>
           </div>
-          
-          <section className="items">{showLoading && <Loading />}</section>
+
+          <section className="items">
+            {/* {showLoading && <Loading />} */}
+          </section>
 
           <div className="container-cart">
-
             <div className="container-headerCart">
-              <h1 className="title-cart">CART</h1>
-              <img src={iconCartList} alt="cartIcon" id="iconCartList"/>
+              <h1 className="title-cart">Carrinho</h1>
+              <img src={iconCartList} alt="cartIcon" id="iconCartList" />
             </div>
 
             <div className="cart-itens">
-              <p>ITEM</p>
+              {carrinho !== 0 ? (
+                <p className="totalIntems">{`TOTAL :  R$ ${
+                  (this.state.carrinho * 100) / 100
+                }`}</p>
+              ) : (
+                <p className="totalIntemsHide"></p>
+              )}
             </div>
-
+            {carrinho !== 0 ? (
+              <button
+                type="button"
+                className="clearCart"
+                onClick={this.clearCart}
+              >
+                Esvaziar
+              </button>
+            ) : (
+              <button
+                type="button"
+                className="clearCartHide"
+                onClick={this.clearCart}
+              ></button>
+            )}
           </div>
-  
         </div>
       </div>
     );
@@ -210,4 +309,3 @@ ShoppingCart.propTypes = {
 };
 
 export default connect(mapStateToProps)(ShoppingCart);
-

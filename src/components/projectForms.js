@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import userLogin from "../redux/actions";
 /* import imgLogin from '../images/emojiWelcome.png'; */
 
-class Login extends React.Component {
+class projectForms extends React.Component {
   state = {
     name: "",
     email: "",
@@ -119,7 +119,7 @@ class Login extends React.Component {
   }
 }
 
-Login.propTypes = {
+projectForms.propTypes = {
   dispatchLogin: PropTypes.func.isRequired,
   history: PropTypes.shape({
     push: PropTypes.func.isRequired,
@@ -130,4 +130,4 @@ const mapDispatchToProps = (dispatch) => ({
   dispatchLogin: (dados) => dispatch(userLogin(dados)),
 });
 
-export default connect(null, mapDispatchToProps)(Login);
+export default connect(null, mapDispatchToProps)(projectForms);

@@ -1,10 +1,8 @@
 import React from "react";
 /* import { Link } from 'react-router-dom'; */
-import { connect } from "react-redux";
-import PropTypes from "prop-types";
 import Projects from "../pages/Projects";
 import portifolioIcons from "../images/imgHome/portifolioIcon.png";
-import DenerImg from "../images/imgHome/coverHomeBig.png";
+import DenerImg from "../images/imgHome/DenerRod.png";
 import gitHubIcon from "../images/imgHome/gitHubIcon.png";
 import linkedinIcon from "../images/imgHome/linkedinIcon.png";
 import instagramIcon from "../images/imgHome/instagramIcon.png";
@@ -15,7 +13,6 @@ class Home extends React.Component {
     console.log(this.props);
   };
   render() {
-    const { name /* email  */ } = this.props;
     return (
       <div className="homeContainer">
         <div className="homeHeader">
@@ -25,7 +22,7 @@ class Home extends React.Component {
           </div>
 
           <div className="homeContainerWelcome">
-            <h1 id="homeWelcome">{`Seja Bem-vindo, ${name} !`}</h1>
+            <h1 id="homeWelcome">Seja Bem-vindo !</h1>
           </div>
 
           <div className="homeContainerLinks">
@@ -70,7 +67,7 @@ class Home extends React.Component {
               você aqui!
             </h4>
             <p id="textAboutMe">
-              Sou desenvolver Front-End, estou sempre estudando e aplicando meus conhecimentos em projetos pessoais, com  mais de uma ano de experiencia em novas skills. Atualmente me localizo como desenvolver front-ed Jr,   procurando um novo local de trabalho para por em prática todos meus conhecimentos, e claro, sempre aprendendo   mais para crescer profissionalmente no mercado de trabalho. Sou de Uberlândia-MG, estudei por um ano  Desenvolvimento Web (Front-End à Back-End), tenho habilidades em React, com componentes por classe e   funcionais, React Hooks, React Redux, consultas à API Rest.
+              Sou desenvolver Front-End, estou sempre estudando e aplicando meus conhecimentos em projetos pessoais, com  mais de uma ano de experiencia em novas skills. Atualmente me localizo como desenvolver front-ed Jr,   procurando um novo local de trabalho para colocar em prática todos meus conhecimentos, e claro, sempre aprendendo   mais para crescer profissionalmente no mercado de trabalho. Sou de Uberlândia-MG, recentemente formei na Trybe (escola de programação) estudei por um ano  Desenvolvimento Web (Front-End à Back-End), tenho habilidades em React, com componentes por classe e   funcionais, React Hooks, React Redux, consultas à API Rest.
             </p>
           </div>
 
@@ -88,14 +85,5 @@ class Home extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => ({
-  name: state.name,
-  email: state.email,
-});
 
-Home.propTypes = {
-  name: PropTypes.string,
-  email: PropTypes.string,
-};
-
-export default connect(mapStateToProps)(Home);
+export default Home;
