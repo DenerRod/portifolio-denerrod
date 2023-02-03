@@ -216,6 +216,8 @@
   flex-direction: column;
   align-items: center;
   margin-top: 30px; 
+  margin-left: 100px;
+  margin-right: 100px;
   border-top: #a3a2a2 solid 2px;
 }
 
@@ -227,8 +229,7 @@
   background-color: #e9e9e9;
   border-radius: 10px;
   text-transform: uppercase;
-  font-size: 20px;
-  font-size: 1.4rem;
+  font-size: 15px;
   font-weight: bold;
   letter-spacing: 5px;
   padding: 25px !important;
@@ -248,8 +249,7 @@
   margin-left: 70px;
   margin-bottom: 70px;
   font-family: 'Kanit', sans-serif;
-  border: 1px solid black;
-  width: 50%;
+  width: 40%;
 }
 
 .formContact {
@@ -303,8 +303,10 @@
   justify-content: center;
   border-radius: 30px;
   background-color: white;
-  width: 50%;
-  margin-top: 50px;
+  border: 10px solid #707070;
+  width: 40%;
+  padding: -50px;
+  margin-top: 40px;
   margin-bottom: 70px;
   margin-left: 50px;
   margin-right: 70px;
