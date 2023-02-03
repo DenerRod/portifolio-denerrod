@@ -268,13 +268,13 @@ class ShoppingCart extends React.Component {
             </div>
 
             <div className="cart-itens">
-              {carrinho !== 0 ? (
-                <p className="totalIntems">{`TOTAL :  R$ ${
-                  (this.state.carrinho * 100) / 100
-                }`}</p>
-              ) : (
+              {
+                carrinho !== 0 
+                ? 
+                <p className="totalIntems">{`TOTAL :  R$ ${(this.state.carrinho * 100) / 100}`}</p> 
+                : 
                 <p className="totalIntemsHide"></p>
-              )}
+              }
             </div>
             {carrinho !== 0 ? (
               <button

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import imgPixelsArt from "../images/imgProjects/imgPixelsArt.png"
 import imgTrybeWarts from "../images/imgProjects/trybeWarts.png"
-import imgShoppingCart from "../images/imgProjects/projectShoppingCart.png"
+import imgShoppingCart from "../images/imgProjects/imgShoppingCart.png"
 /* import { connect } from 'react-redux';
 import PropTypes from 'prop-types'; */
 
@@ -18,7 +18,7 @@ class Projects extends React.Component {
               <div className="spanProjects">
                 <h1 className="nameProject">Projeto Pixes Art</h1>
 {/*                 <span id="explainPxArt">
-                  Primeiro projeto que realizei utilizando HTML/CSS. O modelo se da para <br/> que o usuário selecione uma cor e assim podendo pintar o quadro de pixels,<br/> utilizando sua imaginação poderá criar varia desenhos e formatos apenas com pixels!
+                  Primeiro projeto que realizei utilizando HTML/CSS. O modelo se da para que o usuário selecione uma cor e assim podendo pintar o quadro de pixels, utilizando sua imaginação poderá criar varia desenhos e formatos apenas com pixels!
                 </span> */}
               </div>
             </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import "./AppMobile.css";
 import { Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
