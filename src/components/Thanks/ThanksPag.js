@@ -1,4 +1,5 @@
 import React from "react";
+import "./Thanks.css"
 import { Link } from 'react-router-dom'; 
 
 class ThanksPage extends React.Component {
