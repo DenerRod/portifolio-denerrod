@@ -119,7 +119,7 @@ class Home extends React.Component {
             <input
               type="hidden"
               name="_next"
-              value="https://denerrod.github.io/portifolio-denerrod/"
+              value="https://denerrod.github.io/thanks"
               id="nextInput"
             />
 

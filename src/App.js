@@ -1,8 +1,10 @@
 import React from "react";
 import "./App.css";
+import "./components/Thanks/Thanks.css";
 import "./AppMobile.css";
 import { Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import ThanksPage from "./components/Thanks/ThanksPag";
 import Projects from "./pages/Projects";
 import projectPixelsArt from "./components/projectPixelsArt";
 import projectTrybeWarts from "./components/projectTrybeWarts";
@@ -15,6 +17,8 @@ export default function App() {
       <Switch>
 
         <Route exact path="/portifolio-denerrod" component={(props) => <Home {...props} />} />
+
+        <Route exact path="/Thanks" component={ ThanksPage } />
 
         <Route exact path="/projectForms" component={ projectForms } />
 
