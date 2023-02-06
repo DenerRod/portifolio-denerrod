@@ -17,7 +17,7 @@ export default function App() {
 
         <Route exact path="/portifolio-denerrod" component={(props) => <Home {...props} />} />
 
-        <Route exact path="/thanks" component={ ThanksPage } />
+        <Route path="/thanks" component={ ThanksPage } />
 
         <Route exact path="/projectForms" component={ projectForms } />
 
