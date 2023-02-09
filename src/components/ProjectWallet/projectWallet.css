@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Mukta:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Kanit:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Kanit:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+.walletHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(153, 155, 86);
+    padding: 50px;
+}
+
+.headerTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headerTitle #walletHeaderTitle {
+    font-size: 60px;
+    font-family: 'Great Vibes', cursive;
+    margin-left: 15px;
+}
+
+.headerTitle #walletHeaderImg {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.headerWelcome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headerWelcome #walletWelcome {
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Kanit', sans-serif;
+}
+
+.headerBalance {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headerBalance #walletBalance {
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Kanit', sans-serif;
+}
+
+.walletSetExpense {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.walletForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+    border-bottom: 0.5px solid rgb(156, 154, 154);
+}
+
+.labelForm {
+    font-size: large;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+
+#btnSet {
+    margin: 15px;
+    padding: 0 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#btnSet:hover {
+    background-color: #989b56;
+    color: white;
+}
+
+#value {
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#description {
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#currency {
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#method {
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#tag {
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.tableWallet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+    text-decoration: underline;
+    color: #989b56;
+}
+
+.walletList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.expenseList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.itemList {
+    text-align: start;
+    margin: 20px;
+}

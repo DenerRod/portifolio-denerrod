@@ -1,0 +1,188 @@
+/*-------------- Project Trybewarts OPEN --------------*/
+#rootTrybeWarts {
+    background-color: white;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(50, 167, 145);
+  }
+  
+  .header .trybewarts-header-logo {
+    width: 60px;
+    margin-left: 10px;
+    align-items: flex-start;
+  }
+  
+  .header #trybewarts-header-title {
+    color: white;
+    font-size: xx-large;
+  }
+  
+  .trybewarts-login {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .trybewarts-login .senha {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+  }
+  
+  .email {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+  }
+  
+  .name {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+  }
+  
+  .btn-login {
+    margin-bottom: 25px;
+    margin-right: 10px;
+    border: none;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .mainTrybeWarts {
+    display:flex;
+  }
+  
+  #evaluation-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .fieldsetTrybeWarts {
+    display: inline-flex;
+    width: 675px;
+    border-radius: 10px;
+    border: 2px solid;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: stretch;
+  }
+  
+  #input-name {
+    padding: 10px;
+    border-radius: 10px ;
+  }
+  
+  #input-lastname {
+    border-radius: 10px ;
+  }
+  
+  #input-email {
+    border-radius: 10px ;
+  }
+  
+  #house {
+    border-radius: 10px ;
+  }
+  
+  
+  #trybewarts-forms-logo {
+    height: 500px;
+    margin-left: 10%;
+  }
+  
+  #title-evaluation {
+    margin-left: 90px;
+    font-size: x-large;
+    margin-left: 195px;
+  }
+  
+  body {
+    background-color: rgb(233, 233, 233);
+  }
+  
+  span {
+    padding-top: 20px;
+    padding-right: 8px;
+  }
+  
+  hr {
+    margin-top: 20px;
+  }
+  
+  #container {
+    display: flex;
+    width: 100%;
+  }
+  
+  #container-family {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 50%;
+  }
+  
+  #container-conteudo {
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+  }
+  
+  #conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+    height: 50%;
+    margin-top: 15px;
+  }
+  
+  #textarea {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  #submit-btn {
+    display: flex;
+    justify-content: center;
+    background-color: purple;
+    width: 100%;
+    color: white;
+    height: 35px;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  
+  .footerTW {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    height: 50px;
+    margin-top: 6.1%;
+    align-items: center;
+  }
+  
+  #submit-btn , #agreement , #comentario , hr , #container-aval {
+    margin-bottom: 20px;
+  }

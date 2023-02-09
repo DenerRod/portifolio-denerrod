@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Mukta:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Kanit:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Kanit:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.container  {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 500px;
+    background: #faf8f8;
+    overflow: hidden;
+    border-radius: 30px;
+    /* box-shadow: 0 0 10px 5px #d3ced1; */
+    background-color: #989b56;
+  }
+  
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    right: 5%;
+    transform: translatey(-50%);
+    text-align: justify;
+    color: white;
+    padding: 40px;
+    font-family: 'Merriweather', serif;
+  }
+  
+  #titleInputData {
+    margin-top: -30px;
+    margin-bottom: 10px;
+    font-size: 60px;
+    font-family: 'Great Vibes', cursive;
+    color: white;
+  }
+
+  #inputNameLogin {
+    margin-top: 10px;
+  }
+
+  #inputEmailLogin {
+    margin-top: -60px;
+  }
+  
+  .fontMukta {
+    font-family: 'Mukta', sans-serif;
+    font-size: large;
+  }
+
+  .fontMukta:hover {
+    background-color: rgba(0, 0, 0, 0.568);
+    color: white;
+  }
+  /*--------------  Login CLOSE-------------- */

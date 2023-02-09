@@ -1,12 +1,13 @@
 import React from "react";
-import imgSearch from "../images/imgShoppingCart/seachIconWhite.png";
-import imgCartShopping from "../images/imgShoppingCart/carrinho-de-compras.png";
+import "./projectShoppingCart.css"
+import imgSearch from "../../images/imgShoppingCart/seachIconWhite.png";
+import imgCartShopping from "../../images/imgShoppingCart/carrinho-de-compras.png";
 import {
   getAllProduts,
   searchProducts,
   getAllCategories,
-} from "../utils/fetchAPIShoppingCart.js/fetchAPI";
-import iconCartList from "../images/imgShoppingCart/iconCartList.png";
+} from "../../utils/fetchAPIShoppingCart.js/fetchAPI";
+import iconCartList from "../../images/imgShoppingCart/iconCartList.png";
 /* import Loading from "./Loading/loading"; */
 import { connect } from "react-redux";
 import PropTypes from "prop-types";

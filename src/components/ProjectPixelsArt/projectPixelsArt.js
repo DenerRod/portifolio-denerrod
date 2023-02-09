@@ -1,4 +1,5 @@
 import React from "react";
+import "./projectPixelsArt.css"
 
 class projectPixelsArt extends React.Component {
   constructor() {

@@ -116,12 +116,6 @@ class Home extends React.Component {
             className="formContact"
           >
             <input type="hidden" name="_captcha" value="false" />
-            <input
-              type="hidden"
-              name="_next"
-              value="https://denerrod.github.io/thanks"
-              id="nextInput"
-            />
 
             <label className="labelForm">Nome</label>
             <input

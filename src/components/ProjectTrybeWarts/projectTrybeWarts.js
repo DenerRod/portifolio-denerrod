@@ -1,6 +1,7 @@
 import React from "react";
-import trybewartsHeaderLogo from "../images/projectTrybeWarts/trybeWartsHeaderLogo(1).png"
-import trybewartsBody from "../images/projectTrybeWarts/trybeWartsHeaderLogo-removebg-preview.png"
+import "./projectTrybeWarts.css"
+import trybewartsHeaderLogo from "../../images/projectTrybeWarts/trybeWartsHeaderLogo(1).png"
+import trybewartsBody from "../../images/projectTrybeWarts/trybeWartsHeaderLogo-removebg-preview.png"
 
 class projectTrybeWarts extends React.Component {
     alertLogin = () => {
