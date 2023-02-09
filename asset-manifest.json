@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/portifolio-denerrod/static/css/main.92688bb6.css",
-    "main.js": "/portifolio-denerrod/static/js/main.c7233687.js",
+    "main.css": "/portifolio-denerrod/static/css/main.9623e8d2.css",
+    "main.js": "/portifolio-denerrod/static/js/main.8eaae83e.js",
     "static/media/imgShoppingCart.png": "/portifolio-denerrod/static/media/imgShoppingCart.51422411f6f3beb732cc.png",
     "static/media/DenerRod.png": "/portifolio-denerrod/static/media/DenerRod.d1f4842fa22e58ef2b8a.png",
     "static/media/trybeWarts.png": "/portifolio-denerrod/static/media/trybeWarts.f469cdafd26c60cc783d.png",
+    "static/media/projectWallet.png": "/portifolio-denerrod/static/media/projectWallet.7b6a915f6f66cb462c1f.png",
     "static/media/trybeWartsHeaderLogo-removebg-preview.png": "/portifolio-denerrod/static/media/trybeWartsHeaderLogo-removebg-preview.81f35ab31eae7f116592.png",
     "static/media/imgPixelsArt.png": "/portifolio-denerrod/static/media/imgPixelsArt.7f3e91be1a233dc07a30.png",
     "static/media/seachIconWhite.png": "/portifolio-denerrod/static/media/seachIconWhite.00118c6e26245eb7f00d.png",
     "index.html": "/portifolio-denerrod/index.html",
-    "main.92688bb6.css.map": "/portifolio-denerrod/static/css/main.92688bb6.css.map",
-    "main.c7233687.js.map": "/portifolio-denerrod/static/js/main.c7233687.js.map"
+    "main.9623e8d2.css.map": "/portifolio-denerrod/static/css/main.9623e8d2.css.map",
+    "main.8eaae83e.js.map": "/portifolio-denerrod/static/js/main.8eaae83e.js.map"
   },
   "entrypoints": [
-    "static/css/main.92688bb6.css",
-    "static/js/main.c7233687.js"
+    "static/css/main.9623e8d2.css",
+    "static/js/main.8eaae83e.js"
   ]
 }
