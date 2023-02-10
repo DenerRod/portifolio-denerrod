@@ -92,7 +92,7 @@ class Home extends React.Component {
         </div>
 
         <div className="titleContainer">
-          <h3 className="titleHr" id="projects">
+          <h3 className="titleHr">
             Alguns de meus Projetos
           </h3>
         </div>
