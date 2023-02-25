@@ -50,6 +50,7 @@
   }
 
   .inputNameForms {
+    color: black;
     width: 100%;
     border-radius: 10px;
   }
@@ -59,6 +60,7 @@
   }
 
   .inputEmailForms {
+    color: black;
     width: 100%;
     border-radius: 10px;
   }

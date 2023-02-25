@@ -28,6 +28,7 @@ class MarioGame extends React.Component {
       .bottom.replace("px", "");
 
     const getCoin = document.getElementById("coinGet");
+    const getCoin2 = document.getElementById("coin");
 
     if (pipePosition <= 144 && marioPosition >= 230) {
 
@@ -40,6 +41,30 @@ class MarioGame extends React.Component {
 
         getCoin.classList.add("coinNotGet");
       }, 250)
+
+
+      if (this.state.points >= 5) {
+        getPipe.style.animation = "pipe-animation 2.3s infinite linear"
+
+        getCoin2.style.animation = "coin-animation 2.3s infinite linear"
+      } if (this.state.points >= 10) {
+        getPipe.style.animation = "pipe-animation 2.1s infinite linear"
+
+        getCoin2.style.animation = "coin-animation 2.1s infinite linear"
+      } if (this.state.points >= 15) {
+        getPipe.style.animation = "pipe-animation 1.8s infinite linear"
+
+        getCoin2.style.animation = "coin-animation 1.8s infinite linear"
+      } if (this.state.points >= 20) {
+        getPipe.style.animation = "pipe-animation 1.6s infinite linear"
+
+        getCoin2.style.animation = "coin-animation 1.6s infinite linear"
+      } if (this.state.points >= 30) {
+        getPipe.style.animation = "pipe-animation 1.4s infinite linear"
+
+        getCoin2.style.animation = "coin-animation 1.4s infinite linear"
+      }
+
 
       if (points === 0) {
         this.setState({
