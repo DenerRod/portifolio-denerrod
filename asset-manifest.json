@@ -1,20 +1,31 @@
 {
   "files": {
-    "main.css": "/portifolio-denerrod/static/css/main.ed546089.css",
-    "main.js": "/portifolio-denerrod/static/js/main.6dc1d6b5.js",
+    "main.css": "/portifolio-denerrod/static/css/main.fd3dced6.css",
+    "main.js": "/portifolio-denerrod/static/js/main.3e3494c7.js",
+    "static/media/super-Mario-Lose.png": "/portifolio-denerrod/static/media/super-Mario-Lose.5974d40c367316d07203.png",
+    "static/media/MarioInstructions.png": "/portifolio-denerrod/static/media/MarioInstructions.d41dd969d38e7a803108.png",
+    "static/media/projectMarioGame.png": "/portifolio-denerrod/static/media/projectMarioGame.e70cce14e23c7c4d439e.png",
+    "static/media/groundMario.png": "/portifolio-denerrod/static/media/groundMario.bbfc0dd3e4b4764f9786.png",
     "static/media/imgShoppingCart.png": "/portifolio-denerrod/static/media/imgShoppingCart.51422411f6f3beb732cc.png",
+    "static/media/super-Mario.gif": "/portifolio-denerrod/static/media/super-Mario.077fd3c1556665467a6d.gif",
     "static/media/DenerRod.png": "/portifolio-denerrod/static/media/DenerRod.d1f4842fa22e58ef2b8a.png",
     "static/media/trybeWarts.png": "/portifolio-denerrod/static/media/trybeWarts.f469cdafd26c60cc783d.png",
+    "static/media/luigiMario.png": "/portifolio-denerrod/static/media/luigiMario.f3af8a9942553f9f8acb.png",
+    "static/media/superMarioLogo.png": "/portifolio-denerrod/static/media/superMarioLogo.2440023fd0b98dbc1301.png",
     "static/media/projectWallet.png": "/portifolio-denerrod/static/media/projectWallet.7b6a915f6f66cb462c1f.png",
     "static/media/trybeWartsHeaderLogo-removebg-preview.png": "/portifolio-denerrod/static/media/trybeWartsHeaderLogo-removebg-preview.81f35ab31eae7f116592.png",
+    "static/media/mario-clouds.png": "/portifolio-denerrod/static/media/mario-clouds.083e3a601c6438f9f4c4.png",
+    "static/media/coinMario.png": "/portifolio-denerrod/static/media/coinMario.3f9d4ee39705020d1df0.png",
+    "static/media/blockMario.png": "/portifolio-denerrod/static/media/blockMario.64eac108fc22fb89dd96.png",
     "static/media/imgPixelsArt.png": "/portifolio-denerrod/static/media/imgPixelsArt.7f3e91be1a233dc07a30.png",
+    "static/media/gameOver.png": "/portifolio-denerrod/static/media/gameOver.e6a076964643739c648b.png",
     "static/media/seachIconWhite.png": "/portifolio-denerrod/static/media/seachIconWhite.00118c6e26245eb7f00d.png",
     "index.html": "/portifolio-denerrod/index.html",
-    "main.ed546089.css.map": "/portifolio-denerrod/static/css/main.ed546089.css.map",
-    "main.6dc1d6b5.js.map": "/portifolio-denerrod/static/js/main.6dc1d6b5.js.map"
+    "main.fd3dced6.css.map": "/portifolio-denerrod/static/css/main.fd3dced6.css.map",
+    "main.3e3494c7.js.map": "/portifolio-denerrod/static/js/main.3e3494c7.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed546089.css",
-    "static/js/main.6dc1d6b5.js"
+    "static/css/main.fd3dced6.css",
+    "static/js/main.3e3494c7.js"
   ]
 }
