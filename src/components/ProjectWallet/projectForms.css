@@ -31,9 +31,14 @@
     padding: 40px;
     font-family: 'Merriweather', serif;
   }
+
+  #walletHeaderImg {
+    margin-top: 20px;
+    margin-left: 40%;
+  }
   
   #titleInputData {
-    margin-top: -30px;
+    margin-top: 30px;
     margin-bottom: 10px;
     font-size: 60px;
     font-family: 'Great Vibes', cursive;
@@ -44,8 +49,26 @@
     margin-top: 10px;
   }
 
+  .inputNameForms {
+    width: 100%;
+    border-radius: 10px;
+  }
+
   #inputEmailLogin {
     margin-top: -60px;
+  }
+
+  .inputEmailForms {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .btn-forms {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid white;
+    margin-bottom: 10px;
   }
   
   .fontMukta {

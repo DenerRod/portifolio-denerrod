@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board {
+    width: 100%;
+    height: 980px;
+    /* border-bottom: 15px solid #663b0a; */
+    background: linear-gradient(#7fc1db, #E0F6FF);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.SuperMarioLogo {
+    margin: 50px;
+    width: 200px; 
+    height: 100px;  
+}
+
+.marioClouds {
+    position: absolute;
+    width: 600px;
+    margin-top: -250px;
+    animation: clouds-animation 20s infinite linear;
+}
+
+@keyframes clouds-animation {
+    from { right: -600px;}
+    to {right: 100%;}
+}
+
+
+.gameOver {
+    width: 580px;
+    height: 500px; 
+    margin: -100px auto;
+    display: block;
+}
+
+.gameOverNo {
+    opacity: 0;
+}
+
+
+.pipe {
+    position: absolute;
+    bottom: 100px;
+    width: 150px;
+    right: -100px;
+    animation: pipe-animation 2.5s infinite linear;
+}
+
+.pipeLose {
+    position: absolute;
+    bottom: -28px;
+    width: 150px;
+    left: 145px;
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -100px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+
+
+.block {
+    position: absolute;
+    bottom: 115px;
+    width: 90px;
+    animation: block-animation 9.5s infinite linear;
+}
+
+@keyframes block-animation {
+    from {
+        right: -100px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+
+.coin {
+    position: absolute;
+    bottom: 250px;
+    width: 60px;
+    animation: coin-animation 2.5s infinite linear;
+}
+
+@keyframes coin-animation {
+    from {
+        right: 0;
+        transform:  rotateY(0);
+        transition-duration: 0s;
+    }
+
+    to {
+        right: 100%;
+        transform-style: preserve-3d; 
+        transform:  rotateY(1000deg);
+        transition-duration: 0.5s initial;
+    }
+}
+
+.coinNotGet {
+    position: absolute;
+    bottom: 250px;
+    width: 60px;
+    left: 200px;
+    visibility: collapse;
+}
+
+.coinGet {
+    position: absolute;
+    bottom: 250px;
+    width: 60px;
+    left: 200px;
+    animation: coin-getted 0.5s infinite;
+}
+
+@keyframes coin-not-get {
+    from {
+        visibility:visible;
+    }
+    to {
+        visibility: collapse;
+    }
+}
+
+
+@keyframes coin-getted {
+    from {
+        visibility: collapse;
+        bottom: 250px;
+        transform:  rotateY(0);
+        transition-duration: 0s;
+    }
+
+    to {
+        visibility:visible;
+        bottom: 1000px;
+        transform-style: preserve-3d; 
+        transform:  rotateY(1000deg);
+        transition-duration: 0.5s initial;
+    }
+}
+
+.ground {
+    position: absolute;
+    bottom: -90px;
+    width: 100%;
+}
+
+
+
+.superMario {
+    position: absolute;
+    width: 120px;
+    bottom: 125px;
+    margin-left: 80px;
+    
+}
+
+.superMarioLose {
+    position: absolute;
+    width: 86px;
+    bottom: 0px;
+    margin-left: 80px;
+}
+
+.jump {
+    animation: mario-jump 500ms ease-out;
+}
+
+@keyframes mario-jump {
+    0% {
+        bottom: 125px;
+    }
+
+    40% {
+        bottom: 250px;
+    }
+
+    50% {
+        bottom: 250px;
+    }
+
+    60% {
+        bottom: 250px;
+    }
+
+    70% {
+        bottom: 250px;
+    }
+
+    80% {
+        bottom: 250px;
+    }
+
+    100% {
+        bottom: 125px;
+    }
+}
+
+/* .container-info {
+    width: 100%;
+    height: 280px;
+    background-color: black;
+} */
+
+.score-container {
+    position: fixed; 
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    top: 25px;
+    left: 1650px;
+}
+
+.score-coin {
+    width: 70px;
+}
+
+.score-points {
+    font-weight: bold;
+    font-family: 'Michroma', sans-serif;
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 20px;
+}

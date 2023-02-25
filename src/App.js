@@ -10,6 +10,8 @@ import projectTrybeWarts from "./components/ProjectTrybeWarts/projectTrybeWarts"
 import ProjectForms from "./components/ProjectWallet/projectForms";
 import projectShoppingCart from "./components/ProjectShoppingCart/projectShoppingCart";
 import ProjectWallet from "./components/ProjectWallet/projectWallet";
+import projectMarioGameInstructions from "./components/ProjectMarioGame/projectMarioGameInstructions";
+import projectMarioGame from "./components/ProjectMarioGame/projectMarioGame";
 
 export default function App() {
   return (
@@ -29,6 +31,10 @@ export default function App() {
         <Route exact path="/projectForms" component={ (props) => <ProjectForms {...props} /> } />
 
         <Route exact path="/projectWallet" component={ (props) => <ProjectWallet {...props} />  } />
+
+        <Route exact path="/projectMarioGameInstructions" component={  projectMarioGameInstructions } />
+
+        <Route exact path="/projectMarioGame" component={  projectMarioGame } />
       </Switch>
     </div>
   );

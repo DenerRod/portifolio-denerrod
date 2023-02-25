@@ -27,7 +27,7 @@ class Home extends React.Component {
           </div>
 
           <div className="homeInternalLinks">
-            <a href="#projects" id="linkProjects">
+            <a href="#titleProjects" id="linkProjects">
               Projetos
             </a>
             <a href="#contact" id="linkContact">
@@ -92,7 +92,7 @@ class Home extends React.Component {
         </div>
 
         <div className="titleContainer">
-          <h3 className="titleHr">
+          <h3 className="titleHr" id="titleProjects">
             Alguns de meus Projetos
           </h3>
         </div>
