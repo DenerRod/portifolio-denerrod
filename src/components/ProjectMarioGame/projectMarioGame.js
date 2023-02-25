@@ -127,7 +127,7 @@ class MarioGame extends React.Component {
     }
   };
 
-  reloadGame = (e) => {
+  reloadGame = () => {
     window.location.reload();
   }
 
@@ -137,7 +137,7 @@ class MarioGame extends React.Component {
     window.onkeydown = addEvent;
     return (
       <div>
-        <div className="game-board" id="bodyGame" onClick={this.jumpMario}>
+        <div className="game-board" id="bodyGame" onClick={this.jumpMario} onDoubleClick={this.reloadGame}>
           <img
             src={imgSuperMarioLogo}
             alt="SuperMarioLogo"

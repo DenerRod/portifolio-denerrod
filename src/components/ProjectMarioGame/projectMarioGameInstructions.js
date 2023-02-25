@@ -32,7 +32,7 @@ class MarioGameInstructions extends React.Component {
             <br />
             <p>Para saltar: click com botão esquerdo do mouse</p>
             <br />
-            <p>Para jogar novamente: pressione F5 ou recarregue a página</p>
+            <p>Para jogar novamente: click 2x (duas) vezes na tela</p>
             <br />
             <h3 id="motivationInstructions">Consiga maior números de moedas que conseguir!</h3>
 
