@@ -1,12 +1,12 @@
 import React from "react";
 /* import { Link } from 'react-router-dom'; */
-import Projects from "../pages/Projects";
 import portifolioIcons from "../images/imgHome/portifolioIcon.png";
 import DenerImg from "../images/imgHome/DenerRod.png";
 import gitHubIcon from "../images/imgHome/gitHubIcon.png";
 import linkedinIcon from "../images/imgHome/linkedinIcon.png";
 import instagramIcon from "../images/imgHome/instagramIcon.png";
 import facebookIcon from "../images/imgHome/facebookIcon.png";
+import { Link } from "react-router-dom";
 
 class Home extends React.Component {
   render() {
@@ -27,12 +27,9 @@ class Home extends React.Component {
           </div>
 
           <div className="homeInternalLinks">
-            <a href="#titleProjects" id="linkProjects">
+              <Link to="/projects">
               Projetos
-            </a>
-            <a href="#contact" id="linkContact">
-              Contato
-            </a>
+              </Link>
           </div>
 
           <div className="homeContainerLinks">
@@ -91,101 +88,7 @@ class Home extends React.Component {
           </div>
         </div>
 
-        <div className="titleContainer">
-          <h3 className="titleHr" id="titleProjects">
-            Alguns de meus Projetos
-          </h3>
-        </div>
 
-        <Projects />
-
-        <div className="titleContainer">
-          <h3 className="titleHr" id="contact">
-            Entre em contato
-          </h3>
-        </div>
-
-        <div className="finalsContainerHome">
-
-        <div className="contactContainer">
-          <h1 className="contactTitle">Fómurlário de contato</h1>
-
-          <form
-            method="post"
-            action="https://formsubmit.co/denerrodriguesbarrientos@gmail.com"
-            className="formContact"
-          >
-            <input type="hidden" name="_captcha" value="false" />
-
-            <label className="labelForm">Nome</label>
-            <input
-              type="text"
-              name="name"
-              required="required"
-              placeholder="Nome"
-              id="inputName"
-            />
-
-            <label className="labelForm">Email</label>
-            <input
-              type="email"
-              name="email"
-              required="required"
-              placeholder="Email"
-              id="inputEmail"
-            />
-
-            <label className="labelForm">Mensagem</label>
-            <textarea
-              type="text"
-              name="message"
-              required="required"
-              placeholder="Digite sua menssagem"
-              rows="4"
-              cols="50"
-              id="textAreaContactForm"
-            />
-
-            <button type="submit" id="btnContactForm">
-              Enviar
-            </button>
-          </form>
-        </div>
-
-        <div className="FooterHome">
-          
-            <h1 id="footerTitle">Me Siga:</h1>
-         
-          <a
-              href="https://github.com/DenerRod"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={gitHubIcon} alt="GitHub" id="gitHubIconFooter" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/dener-rodrigues-634b421ba/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={linkedinIcon} alt="LinkedIn" id="linkedinIconFooter" />
-            </a>
-            <a
-              href="https://www.instagram.com/denerrod/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={instagramIcon} alt="Instagram" id="instagramIconFooter" />
-            </a>
-            <a
-              href="https://www.facebook.com/denerrodb/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={facebookIcon} alt="Facebook" id="facebookIconFooter" />
-            </a>
-        </div>
-        </div>
       </div>
     );
   }
