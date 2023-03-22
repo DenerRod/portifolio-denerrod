@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portifolio-denerrod/static/css/main.bd6fdba0.css",
+    "main.css": "/portifolio-denerrod/static/css/main.ed3f2c49.css",
     "main.js": "/portifolio-denerrod/static/js/main.2a6b7e0a.js",
     "static/media/super-Mario-Lose.png": "/portifolio-denerrod/static/media/super-Mario-Lose.5974d40c367316d07203.png",
     "static/media/MarioInstructions.png": "/portifolio-denerrod/static/media/MarioInstructions.d41dd969d38e7a803108.png",
@@ -21,11 +21,11 @@
     "static/media/gameOver.png": "/portifolio-denerrod/static/media/gameOver.e6a076964643739c648b.png",
     "static/media/seachIconWhite.png": "/portifolio-denerrod/static/media/seachIconWhite.00118c6e26245eb7f00d.png",
     "index.html": "/portifolio-denerrod/index.html",
-    "main.bd6fdba0.css.map": "/portifolio-denerrod/static/css/main.bd6fdba0.css.map",
+    "main.ed3f2c49.css.map": "/portifolio-denerrod/static/css/main.ed3f2c49.css.map",
     "main.2a6b7e0a.js.map": "/portifolio-denerrod/static/js/main.2a6b7e0a.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd6fdba0.css",
+    "static/css/main.ed3f2c49.css",
     "static/js/main.2a6b7e0a.js"
   ]
 }
