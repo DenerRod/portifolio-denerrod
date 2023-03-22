@@ -5,12 +5,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Kanit:ital,wght@0,300;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Raleway:wght@300&display=swap');
 
 /*-------------- Home OPEN --------------*/
 .homeContainer {
-    height: 100vh;
-    max-height: 100vh;
-    align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: black;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center
+}
+
+.homeCenter {
+  width: 70%;
+  height: 70%;
+  background: black;
+  border-top: 20px solid;
+  border-left: 20px solid;
+  border-image: linear-gradient(to right, rgb(75,76,182), rgb(87,182,103)) 1;
+  transition: border-image 1s;
+  animation: slowHomeCenter 5s both;
+}
+
+.homeCenter:hover {
+  border-image: linear-gradient(to right, rgb(87,182,103), rgb(75,76,182)) 1;
+}
+
+@keyframes slowHomeCenter {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .homeHeader {
@@ -18,69 +44,43 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
   text-justify: center;
   color: silver;
   padding: 20px;
   font-family: 'Merriweather', serif;
-  opacity: 0;
-  animation: fadeIn 2.3s 0.1s both;
+  /* animation: fadeIn 2.3s 0.1s both; */
 }
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   from { opacity: 0; margin-top: -140px;}
   to { opacity: 1; margin-top: 0px;}
 }
+ */
+
+ .homeIcon {
+   width: 100px;
+   height: 100px;
+   animation: worldSpinner 50.5s linear infinite;
+  }
+  
+  @keyframes worldSpinner { 
+    from {
+      transform:  rotateZ(0);
+  } 
+  to {
+    transform:  rotateZ(360deg);
+}
+  }
 
 
-.homeContainerTitle {
+
+/* .headerContent {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-around;
+} */
 
-}
-
-.homeContainerTitle #homeTitle {
-  font-size: large;
-  font-family: 'Kanit', sans-serif;
-  color: #ebebeb;
-  margin: auto;
-}
-
-.homeContainerTitle #iconPortifolio {
-  width: 50px;
-}
-
-.homeContainerWelcome {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  color: #ebebeb;
-  font-size: 40px;
-  font-family: 'Great Vibes', cursive;
-}
-
-
-.homeInternalLinks {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  font-family: 'Kanit', sans-serif;
-}
-
-.homeInternalLinks #linkProjects {
-  font-size: large;
-  font-weight: bold;
-  text-decoration: underline;
-  margin: 35px;
-}
-
-.homeInternalLinks #linkContact {
-  font-size: large;
-  font-weight: bold;
-  text-decoration: underline;
-  margin: 35px;
-}
 
 .homeContainerLinks {
   display: flex;
@@ -109,24 +109,111 @@
   margin-right: 25px
 }
 
-.homeBody {
+/* .homeBody {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+} */
+
+.welcomeContainer {
+  width: 40%;
+  margin-top: 5%;
+  margin-left: 10%;
 }
 
 .containerAboutMe {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0px;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  align-items: center;  
 }
 
-.containerAboutMe #imgPortifolio {
-  width: 400px;
-  border-radius: 50%;
-  border: 10px solid white;
+.divAboutMe {
+  display: flex;
+  height: auto;
+  margin-left: 10%;
+  flex-direction: column;
+  align-items: flex-start;
+  border-left: 5px solid;
+  border-image: linear-gradient(to top, rgb(75,76,182), rgb(87,182,103)) 1;
+  transition: border-image 1s;
+}
+
+.divAboutMe:hover {
+  border-image: linear-gradient(to top, rgb(87,182,103), rgb(75,76,182)) 1;
+}
+
+
+#homeWelcome {
+  margin-left: 30px;
+  color: #d1d1d1;
+  font-size: 60px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+#textAboutMe {
+  margin-left: 30px;
+  margin-right: 20%;
+  text-align: start;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #d1d1d1;
+}
+
+.projectsContainer {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 5%;
+  padding: 20px 50px;
+  border-left: 5px solid;
+  border-top: 5px solid;
+  border-image: linear-gradient(to top, #d662c6, rgb(233, 217, 71)) 1;
+  transition: border-image 1s;
+}
+
+.projectsContainer:hover {
+  border-image: linear-gradient(to top, rgb(233, 217, 71), #d662c6) 1;
+}
+
+
+#titleOfProjects {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5em;
+  color: #d1d1d1;
+  transition: border-image 1s;
+}
+
+#titleOfProjects:hover {
+  color: rgb(87,182,103);
+}
+
+.projectsItem {
+  line-height: 2.6;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8em;
+  color: #d1d1d1;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to left, #d662c6, rgb(233, 217, 71)) 1;
+  transition: border-image 1s;
+}
+
+.projectsItem:hover {
+  font-weight: bold; 
+  color: white;
+  border-bottom: 4px solid;
+  border-image: linear-gradient(to left, rgb(233, 217, 71), #d662c6) 1;
+}
+
+
+/* .containerAboutMe #imgPortifolio {
+  width: 200px;
+  border-radius: 100px;
   margin-top: 80px;
   opacity: 0;
   animation: showImg 2.5s 0.8s both;;
@@ -135,27 +222,11 @@
 @keyframes showImg {
   from { opacity: 0; }
   to { opacity: 1; }
-}
+} */
 
-.containerAboutMe #titleAboutMe {
-  margin-top: 5px;
-  text-align: center;
-  font-size: 30px;
-  font-weight: normal;
-  font-family: 'Kanit', sans-serif;
-  color: #707070;
-}
 
-.containerAboutMe #textAboutMe {
-  margin: 40px 20%;
-  text-align: center;
-  font-family: 'Kanit', sans-serif;
-  font-weight: normal;
-  font-size: 20px;
-  color: #707070;
-}
 
-.titleContainer {
+/* .titleContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -285,7 +356,7 @@
   width: 70px;
   margin-right: 25px
 }
-
+ */
 /*-------------- Home CLOSE --------------*/
 
 
@@ -298,7 +369,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 50px 0px;
+  background-color: black;
 }
 
 .projectCard {

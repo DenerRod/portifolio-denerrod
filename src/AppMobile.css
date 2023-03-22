@@ -1,281 +1,195 @@
 @media screen and (max-width: 800px) {
 
-  #root {
-    width: 100%;
-    min-height: 100%;
-  }
-
-
   .homeContainer {
+    position: static;
+    width: 100vw;
+    height: 150vh;
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+  }
+  
+  .homeCenter {
     width: 100%;
-    animation: fadeStart 0.5s 0.5s both;
+    height: 100%;
+    background: black;
+    border-top: 10px solid;
+    border-left: 10px solid;
+    border-image: linear-gradient(to right, rgb(75,76,182), rgb(87,182,103)) 1;
+    transition: border-image 1s;
+    animation: slowHomeCenter 5s both;
   }
-
-  @keyframes fadeStart {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
+  
+  .homeCenter:hover {
+    border-image: linear-gradient(to right, rgb(87,182,103), rgb(75,76,182)) 1;
   }
-
-
+  
+  @keyframes slowHomeCenter {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
   .homeHeader {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background: black;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     text-justify: center;
     color: silver;
-    padding: 10px;
-    font-family: 'Merriweather', serif;
-    opacity: 0;
-    animation: fadeIn 2.3s 0.1s both;
+    padding: 20px;
   }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      margin-top: -140px;
+  
+  
+   .homeIcon {
+     width: 60px;
+     height: 60px;
+     animation: worldSpinner 50.5s linear infinite;
     }
-
+    
+    @keyframes worldSpinner { 
+      from {
+        transform:  rotateZ(0);
+    } 
     to {
-      opacity: 1;
-      margin-top: 0px;
+      transform:  rotateZ(360deg);
+  }
     }
-  }
-
-
-  .homeContainerTitle {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 10px;
-  }
-
-  .homeContainerTitle #homeTitle {
-    font-size: small;
-    font-family: 'Kanit', sans-serif;
-    color: #ebebeb;
-  }
-
-  .homeContainerTitle #iconPortifolio {
-    width: 40px;
-  }
-
-  .homeContainerWelcome {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 20px;
-    color: #ebebeb;
-    font-size: 30px;
-    font-family: 'Great Vibes', cursive;
-  }
-
-
-  .homeInternalLinks {
+  
+  
+  
+  /* .headerContent {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    font-family: 'Kanit', sans-serif;
-  }
-
-  .homeInternalLinks #linkProjects {
-    font-size: large;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: underline;
-  }
-
-  .homeInternalLinks #linkContact {
-    font-size: large;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: underline;
-  }
-
+    justify-content: space-around;
+  } */
+  
+  
   .homeContainerLinks {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
   }
-
-
+  
+  
   .homeContainerLinks #gitHubIcon {
-    width: 50px;
+    width: 35px;
   }
-
+  
   .homeContainerLinks #linkedinIcon {
-    width: 50px;
+    width: 35px;
   }
-
+  
   .homeContainerLinks #instagramIcon {
-    width: 50px;
+    width: 35px;
   }
-
+  
   .homeContainer #facebookIcon {
-    width: 50px;
+    width: 35px;
   }
-
-  .homeBody {
+  
+  /* .homeBody {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+  } */
+  
+  .welcomeContainer {
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 10%;
   }
-
+  
   .containerAboutMe {
     display: flex;
+    width: 100%;
+    height: auto;
     flex-direction: column;
-    align-items: center;
+    align-items: center;  
   }
-
-  .containerAboutMe #imgPortifolio {
-    width: 200px;
-    border-radius: 50%;
-    border: 10px solid white;
-    margin-top: 50px;
-    opacity: 0;
-    animation: showImg 2.5s 0.8s both;
-    ;
-  }
-
-  @keyframes showImg {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
-  }
-
-  .containerAboutMe #titleAboutMe {
-    margin-top: 5px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Kanit', sans-serif;
-    color: #707070;
-  }
-
-  .containerAboutMe #textAboutMe {
-    text-align: center;
-    font-family: 'Kanit', sans-serif;
-    text-align: left;
-    font-weight: normal;
-    font-size: 18px;
-    color: #707070;
-  }
-
-  .titleContainer {
+  
+  .divAboutMe {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-    border-top: #a3a2a2 solid 2px;
-  }
-
-  .titleContainer .titleHr {
-    margin-top: -50px;
-    color: #707070;
-    background-color: #e9e9e9;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 20px !important;
-    font-family: 'Kanit', sans-serif;
-  }
-
-  .finalsContainerHome {
-    display: flex;
+    height: auto;
+    margin-left: 10%;
     flex-direction: column;
     align-items: flex-start;
+    border-left: 5px solid;
+    border-image: linear-gradient(to top, rgb(75,76,182), rgb(87,182,103)) 1;
+    transition: border-image 1s;
   }
-
-  .contactContainer {
-    display: flex;
-    align-items: flex-start;
-    margin-left: 10px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border-radius: 20px;
-    font-family: 'Kanit', sans-serif;
+  
+  .divAboutMe:hover {
+    border-image: linear-gradient(to top, rgb(87,182,103), rgb(75,76,182)) 1;
   }
-
-  .formContact {
-    display: flex;
-    flex-direction: column;
+  
+  
+  #homeWelcome {
+    margin-left: 30px;
+    color: #d1d1d1;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
   }
-
-  .contactTitle {
-    margin-top: -20px;
-    color: #707070;
-    font-size: x-large;
+  
+  
+  #textAboutMe {
+    margin-left: 30px;
+    text-align: start;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9em;
+    line-height: 1.6;
+    color: #d1d1d1;
   }
-
-  .formContact .labelForm {
-    margin-top: 20px;
-    font-weight: bold;
-  }
-
-  #inputName {
-    width: min-content;
-    border-radius: 5px;
-  }
-
-  #inputEmail {
-    width: min-content;
-    border-radius: 5px;
-  }
-
-  #textAreaContactForm {
-    border-radius: 5px;
-  }
-
-  #btnContactForm {
-    width: min-content;
-    margin-top: 30px;
-    padding: 10px;
-    border: 2px solid gray;
-    border-radius: 5px;
-  }
-
-  .FooterHome {
-    margin: 100px auto;
-    align-items: flex-start;
+  
+  .projectsContainer {
+    width: 75%;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    margin-right: 5%;
+    margin-top: 8%;
+    padding: 50px;
+    border-right: 4px solid;
+    border-bottom: 4px solid;
+    border-image: linear-gradient(to top, #d662c6, rgb(233, 217, 71)) 1;
+    transition: border-image 1s;
   }
-
-  #footerTitle {
-    font-family: 'Kanit', sans-serif;
-    font-size: xx-large;
-    color: black;
+  
+  .projectsContainer:hover {
+    border-image: linear-gradient(to top, rgb(233, 217, 71), #d662c6) 1;
+  }
+  
+  
+  #titleOfProjects {
     text-align: center;
-    margin-top: -150px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    color: #d1d1d1;
+    transition: border-image 1s;
   }
-
-  .FooterHome #gitHubIconFooter {
-    width: 50px;
+  
+  #titleOfProjects:hover {
+    color: rgb(87,182,103);
   }
-
-  .FooterHome #linkedinIconFooter {
-    width: 50px;
+  
+  .projectsItem {
+    line-height: 2.6;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8em;
+    color: #d1d1d1;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to left, #d662c6, rgb(233, 217, 71)) 1;
+    transition: border-image 1s;
   }
-
-  .FooterHome #instagramIconFooter {
-    width: 50px;
+  
+  .projectsItem:hover {
+    font-weight: bold; 
+    color: white;
+    border-bottom: 4px solid;
+    border-image: linear-gradient(to left, rgb(233, 217, 71), #d662c6) 1;
   }
-
-  .FooterHome #facebookIconFooter {
-    width: 50px;
-  }
-
 
   /*-------------- Home CLOSE --------------*/
 
