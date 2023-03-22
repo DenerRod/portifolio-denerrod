@@ -2,8 +2,8 @@
 
   .homeContainer {
     position: static;
-    width: 100vw;
-    height: 150vh;
+    width: auto;
+    height: auto;
     display: flex;
     background-color: black;
     flex-direction: row;
