@@ -1,14 +1,21 @@
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
 
   .homeContainer {
-    position: static;
+    position:relative;
     width: auto;
     height: auto;
     display: flex;
     background-color: black;
     flex-direction: row;
     justify-content: center;
-    align-items: center
+    align-items: center;
   }
   
   .homeCenter {
@@ -98,17 +105,16 @@
   } */
   
   .welcomeContainer {
-    width: 100%;
+    width: 80%;
     margin-top: 5%;
-    margin-left: 10%;
   }
   
   .containerAboutMe {
     display: flex;
-    width: 100%;
+    width: 95%;
     height: auto;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
   }
   
   .divAboutMe {
