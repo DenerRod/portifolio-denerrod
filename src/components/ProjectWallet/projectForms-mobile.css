@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Mukta:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Kanit:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Kanit:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+@media only screen and (max-width: 800px) {
+  .main-form {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    width: 100%;
+    height: 100%;
+    background: black;
+    border: 20px solid;
+    border-image: linear-gradient(to top, rgb(75,76,182), rgb(87,182,103)) 1;
+    transition: border-image 1s;
+  }
+  
+  .form-container:hover {
+    border-image: linear-gradient(to top, rgb(87,182,103), rgb(75,76,182)) 1;
+  }
+  
+  #title-form {
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  #inputNameLogin {
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #inputEmailLogin {
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #btn-forms {
+    height: 70px;
+    background: linear-gradient(to right, rgb(87,182,103), rgb(75,76,182));
+    border-radius: 5px;
+    font-size: large;
+    color: white;
+  }
+  
+  #btn-forms:hover {
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(75,76,182), rgb(87,182,103));
+  }
+}
+
+  /*--------------  Login CLOSE-------------- */

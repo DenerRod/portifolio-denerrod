@@ -6,80 +6,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
-.container  {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    height: 500px;
-    width: 500px;
-    background: #faf8f8;
-    overflow: hidden;
-    border-radius: 30px;
-    /* box-shadow: 0 0 10px 5px #d3ced1; */
-    background-color: #989b56;
-  }
-  
-  .content {
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    right: 5%;
-    transform: translatey(-50%);
-    text-align: justify;
-    color: white;
-    padding: 40px;
-    font-family: 'Merriweather', serif;
-  }
 
-  #walletHeaderImg {
-    margin-top: 20px;
-    margin-left: 40%;
-  }
-  
-  #titleInputData {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    font-size: 60px;
-    font-family: 'Great Vibes', cursive;
-    color: white;
-  }
+.main-form {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: black;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
 
-  #inputNameLogin {
-    margin-top: 10px;
-  }
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  width: 30%;
+  height: 60%;
+  background: black;
+  border: 20px solid;
+  border-image: linear-gradient(to top, rgb(75,76,182), rgb(87,182,103)) 1;
+  transition: border-image 1s;
+}
 
-  .inputNameForms {
-    color: black;
-    width: 100%;
-    border-radius: 10px;
-  }
+.form-container:hover {
+  border-image: linear-gradient(to top, rgb(87,182,103), rgb(75,76,182)) 1;
+}
 
-  #inputEmailLogin {
-    margin-top: -60px;
-  }
+#title-form {
+  font-size: xx-large;
+  font-weight: bold;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
 
-  .inputEmailForms {
-    color: black;
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .btn-forms {
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    border: 3px solid white;
-    margin-bottom: 10px;
-  }
-  
-  .fontMukta {
-    font-family: 'Mukta', sans-serif;
-    font-size: large;
-  }
+#walletIcon {
+  width: 60px;
+  animation: turnMoney 2s infinite;
+}
 
-  .fontMukta:hover {
-    background-color: rgba(0, 0, 0, 0.568);
-    color: white;
-  }
+@keyframes turnMoney { 
+  from {
+    transform:  rotateZ(0);
+} 
+to {
+  transform:  rotateZ(360deg);
+}
+}
+
+#inputNameLogin {
+  border-radius: 5px;
+}
+
+#inputEmailLogin {
+  border-radius: 5px;
+}
+
+#btn-forms {
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(to right, rgb(87,182,103), rgb(75,76,182));
+  border-radius: 5px;
+  font-size: large;
+  color: white;
+}
+
+#btn-forms:hover {
+  font-weight: bold;
+  background: linear-gradient(to right, rgb(75,76,182), rgb(87,182,103));
+}
   /*--------------  Login CLOSE-------------- */

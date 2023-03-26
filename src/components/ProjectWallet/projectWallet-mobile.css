@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Raleway:wght@300&display=swap');
 
-
+@media only screen and (max-width: 800px) {
 .container-wallet {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -15,49 +15,52 @@
 
 .walletHeader {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: black;
-    padding: 50px;
+    padding: 20px;
     color: white;
 }
 
 .headerTitle {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: flex-start;
 }
 
 .headerTitle #walletHeaderTitle {
-    font-size: 60px;
-    margin-left: 15px;
+    font-size: 40px;
 }
 
 .headerTitle #walletHeaderImg {
-    width: 60px;
-    margin-bottom: 15px;
+    width: 30px;
 }
 
 .headerWelcome {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
 }
 
 .headerWelcome #walletWelcome {
     text-align: center;
-    font-size: x-large;
+    font-size: medium;
 }
 
 .headerBalance {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
 }
 
 .headerBalance #walletBalance {
     text-align: center;
-    font-size: x-large; 
+    font-size: large; 
+    border: 5px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 30px 0;
+    width: 50%;
 }
 
 .walletSetExpense {
@@ -68,15 +71,15 @@
 
 .walletForm {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-end;
     margin-top: 25px;
-    border-bottom: 0.5px solid rgb(156, 154, 154);
+    border-bottom: 2.5px solid rgb(156, 154, 154);
 }
 
 .labelForm {
-    font-size: large;
-    text-align: center;
+    font-size: 15px;
+    text-align: start;
     margin: 15px;
     border-radius: 5px;
 }
@@ -90,21 +93,18 @@
 }
 
 #btnSet:hover {
-    background-color: #989b56;
-    color: white;
-}
-
-#btnSet:hover {
     font-weight: bold;
     background: linear-gradient(to right, rgb(75,76,182), rgb(87,182,103));
   }
 
 #value {
+    width: 40%;
     border-radius: 5px;
     margin: 10px;
 }
 
 #description {
+    width: 50%;
     border-radius: 5px;
     margin: 10px;
 }
@@ -115,11 +115,13 @@
 }
 
 #method {
+    width: 40%;
     border-radius: 5px;
     margin: 10px;
 }
 
 #tag {
+    width: 50%;
     border-radius: 5px;
     margin: 10px;
 }
@@ -127,9 +129,9 @@
 .tableWallet {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin: 30px;
-    font-size: x-large;
+    justify-content: space-between;
+    margin: 10px 5px;
+    font-size: 13px;
     font-weight: bold;
     text-decoration: underline;
     color: #28570c;
@@ -150,5 +152,8 @@
 
 .itemList {
     align-items: start;
-    margin: 20px;
+    margin: 0px;
+    font-size: 13px;
+}
+
 }

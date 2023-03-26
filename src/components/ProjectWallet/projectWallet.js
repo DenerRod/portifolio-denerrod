@@ -1,5 +1,6 @@
 import React from "react";
 import "./projectWallet.css";
+import "./projectWallet-mobile.css"
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getAllCoins } from "../../utils/fetchAnother/fetchCoin.js";

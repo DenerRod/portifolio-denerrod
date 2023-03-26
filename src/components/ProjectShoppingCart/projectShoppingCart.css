@@ -9,6 +9,17 @@
 
 /*-------------- Project Shopping Cart OPEN --------------*/
 
+  .bodyCart {
+    top: 0;
+    animation: slowBody 2s 1s both linear;
+    background-color: black;
+  }
+
+  @keyframes slowBody {
+    from { opacity: 0; top: 0;}
+    to {opacity: 1; top: auto;}
+  }
+
   .shopping-header {
     display: flex;
     flex-direction: row;
