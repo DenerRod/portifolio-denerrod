@@ -1,28 +1,29 @@
 {
   "files": {
-    "main.css": "/portifolio-denerrod/static/css/main.bf57dd04.css",
-    "main.js": "/portifolio-denerrod/static/js/main.453eb7e2.js",
+    "main.css": "/portifolio-denerrod/static/css/main.daa06506.css",
+    "main.js": "/portifolio-denerrod/static/js/main.7a2daebd.js",
     "static/media/super-Mario-Lose.png": "/portifolio-denerrod/static/media/super-Mario-Lose.5974d40c367316d07203.png",
+    "static/media/world.png": "/portifolio-denerrod/static/media/world.5e1d309b09fd71fca1b1.png",
     "static/media/MarioInstructions.png": "/portifolio-denerrod/static/media/MarioInstructions.d41dd969d38e7a803108.png",
     "static/media/projectMarioGame.png": "/portifolio-denerrod/static/media/projectMarioGame.e70cce14e23c7c4d439e.png",
     "static/media/groundMario.png": "/portifolio-denerrod/static/media/groundMario.bbfc0dd3e4b4764f9786.png",
     "static/media/imgShoppingCart.png": "/portifolio-denerrod/static/media/imgShoppingCart.51422411f6f3beb732cc.png",
     "static/media/super-Mario.gif": "/portifolio-denerrod/static/media/super-Mario.077fd3c1556665467a6d.gif",
+    "static/media/walletIcon.png": "/portifolio-denerrod/static/media/walletIcon.7fedab720a24c6eb88d5.png",
     "static/media/luigiMario.png": "/portifolio-denerrod/static/media/luigiMario.f3af8a9942553f9f8acb.png",
     "static/media/superMarioLogo.png": "/portifolio-denerrod/static/media/superMarioLogo.2440023fd0b98dbc1301.png",
     "static/media/projectWallet.png": "/portifolio-denerrod/static/media/projectWallet.7b6a915f6f66cb462c1f.png",
     "static/media/mario-clouds.png": "/portifolio-denerrod/static/media/mario-clouds.083e3a601c6438f9f4c4.png",
     "static/media/coinMario.png": "/portifolio-denerrod/static/media/coinMario.3f9d4ee39705020d1df0.png",
     "static/media/blockMario.png": "/portifolio-denerrod/static/media/blockMario.64eac108fc22fb89dd96.png",
-    "static/media/world.png": "/portifolio-denerrod/static/media/world.ccb0a1b8b59e542fde65.png",
     "static/media/gameOver.png": "/portifolio-denerrod/static/media/gameOver.e6a076964643739c648b.png",
     "static/media/seachIconWhite.png": "/portifolio-denerrod/static/media/seachIconWhite.00118c6e26245eb7f00d.png",
     "index.html": "/portifolio-denerrod/index.html",
-    "main.bf57dd04.css.map": "/portifolio-denerrod/static/css/main.bf57dd04.css.map",
-    "main.453eb7e2.js.map": "/portifolio-denerrod/static/js/main.453eb7e2.js.map"
+    "main.daa06506.css.map": "/portifolio-denerrod/static/css/main.daa06506.css.map",
+    "main.7a2daebd.js.map": "/portifolio-denerrod/static/js/main.7a2daebd.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf57dd04.css",
-    "static/js/main.453eb7e2.js"
+    "static/css/main.daa06506.css",
+    "static/js/main.7a2daebd.js"
   ]
 }
