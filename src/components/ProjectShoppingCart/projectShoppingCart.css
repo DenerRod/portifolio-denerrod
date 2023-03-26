@@ -5,46 +5,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Kanit:ital,wght@0,300;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Raleway:wght@300&display=swap');
 
 /*-------------- Project Shopping Cart OPEN --------------*/
-.bodyCart {
-    background-color: #ebebeb;
-  }
-  
+
   .shopping-header {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    background-color: rgb(81, 88, 75);
+    justify-content: space-between;
+    padding: 25px;
+    background: linear-gradient(to right, rgb(75,76,182), rgb(87,182,103));
   }
   
   .divHeaderTitle {
-    margin: 1%;
-    margin-left: 3%;
-    margin-right: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 10px;
   }
   
   .divHeaderTitle #shopping-header-title {
-    color: white;
+    color: black;
     font-size: xx-large;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
   }
   
   .divHeaderTitle #img-shopping {
-    margin-left: -30%;
-    margin-top: -30%;
     width: 50px;
     height: 50px;
   }
   
   .divHeaderForm{
-    display: inline-flex;
-    margin: 1.1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
   
   .divHeaderForm .searchInput {
     margin: auto;
     padding: 10px;
     border: none;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: bold;
   }
   
   .divHeaderForm .btn-search {
@@ -56,13 +60,9 @@
   }
   
   .divHeaderForm .shopping-search-icon {
-    width: 20px;
-    margin: 5px;
-    align-items: flex-start;
+    width: 30px;
+    padding: 4px;
   }
-  
-  
-  
   
   .btn-search:hover {
     background-color: gray; 
@@ -71,18 +71,19 @@
   .bodyShopping {
     display: flex;
     flex-direction: row;
-    justify-content:center; 
-    background: #ebebeb;
+    align-items: baseline;
+    justify-content: space-around; 
+    background-color: black;
     overflow: hidden;
   }
   
   .items {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; 
+    justify-content: space-between; 
     width: 50%;
     flex-wrap: wrap;
-    margin: 40px;
+    margin-top: auto;
   }
   
   
@@ -90,14 +91,17 @@
     display: flex;
     flex-direction: column;
     transition: box-shadow .3s;
-    margin: 10px;
+    margin-top: 60px;
     height: auto;
     width: 230px;
     border-radius: 5px;
     background-color: #fff;
     box-sizing: border-box;
     padding: 20px;
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
     animation: showItens 0.9s 0.5s both;
   }
   
@@ -107,7 +111,7 @@
   }
   
   .item:hover {
-    box-shadow: 3px 3px 15px rgb(156, 149, 149); 
+    box-shadow: 7px 5px 10px rgb(87,182,103); 
   }
   
   .item .item-name {
@@ -131,7 +135,7 @@
   }
   
   .item .item__images {
-    width: 100%;
+    width: auto;
   }
   
   .divSection {
@@ -143,35 +147,29 @@
   
   .divSection .item__buy {
     font-size: large;
-    background-color: #51584b;
+    background-color: rgb(87,182,103);
     color: white;
-    border: 2px solid gray;
     border-radius: 3px;
     cursor: pointer;
     margin-top: 15px;
     padding: 10px;
   }
+
+  .item__buy:hover {
+    box-shadow: 5px 5px 15px rgb(75,76,182); 
+  }
   
   .divSection .item__add {
-    font-size: medium;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
     background-color: rgb(255, 255, 255);
     border: 2px solid gray;
     border-radius: 3px;
     cursor: pointer;
     margin-top: 10px;
-    margin-left: -6px;
-    margin-right: -6px;
-    padding: 10px 3px 10px 7px;
+    padding: 10px;
     color: rgb(0, 0, 0);
-    text-align: left;
-  }
-  
-  .divSection .cartIcon {
-    width: 24px;
-    height: 24px;
-    margin-top: -25px;
-    margin-bottom: 0px;
-    margin-left: 155px;
+    text-align: center;
   }
   
   .item .item__price {
@@ -180,58 +178,56 @@
     padding: 30px;
     margin-top: -15%;
     text-align: center;
-    color: #51584b;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
     font-size: x-large;
     font-weight: bold;
   }
   
   .container-categories {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    justify-content: space-between;
     width: 20%;
     height: 100%;
-    background-color: rgb(255, 255, 255);
-    font-family: 'Mukta', sans-serif;
-    background-color: white;
-    color: black;
+    background-color: #333;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
     font-size: large;
-    border: 10px solid rgb(81, 88, 75);
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 5px;
     margin-top: 50px;
-    margin-left: 150px;
   }
   
   .title-options {
-    margin-top: 5px;
-    text-align: center;
-    font-size: xx-large;
+    padding: 5px;
+    line-height: 3;
+    text-align: left;
+    font-size: x-large;
     font-weight: bold;
   }
   
   .optionCategory {
-    margin: 30px;
+    line-height: 2.1;
     text-align: left;
-    font-size: large;
+    font-size: medium;
     font-weight: normal;
     cursor: pointer;
+    padding: 5px;
+    transition: border-image 1s;
   }
   
   .optionCategory:hover {
-    border-bottom: 1px solid black;
+    font-weight: bold;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-image: linear-gradient(to right, rgb(87,182,103), rgb(75,76,182)) 1;
   }
   
   .container-cart {
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
     width: 20%;
     height: 30%;
-    padding: 0px;
-    background-color: white;
-    border: 10px solid white;
+    padding: 10px;
+    background-color: #333;
     border-radius: 19px;
   }
   
@@ -240,25 +236,28 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: rgb(81, 88, 75);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
   }
   
   .container-headerCart .title-cart {
-    font-size: xx-large;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: x-large;
     font-weight: 1px;
+    color: white;
   }
   
   .container-headerCart #iconCartList {
-    width: 50px;
+    width: 30px;
   }
   
   .totalIntems {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
     margin-top: 30px;
     font-size: large;
     font-weight: bold;
-    background-color: yellow;
+    background-color: rgb(75,76,182);
     border-radius: 5px;
     padding: 10px;
     animation: showTotal 1s 0.6s both;

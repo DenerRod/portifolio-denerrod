@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import imgPixelsArt from "../images/imgProjects/imgPixelsArt.png"
-import imgTrybeWarts from "../images/imgProjects/trybeWarts.png"
 import imgShoppingCart from "../images/imgProjects/imgShoppingCart.png"
 import imgWallet from "../images/imgProjects/projectWallet.png"
 import imgMarioGame from "../images/imgProjects/projectMarioGame.png"
@@ -12,33 +10,6 @@ class Projects extends React.Component {
     render() {
       return(
           <div className="listProject">
-
-            <div className="projectCard">
-              <Link to="/projectPixelsArt">
-                <img src={imgPixelsArt} alt="" className="projectImg" />
-              
-              <div className="spanProjects">
-                <h1 className="nameProject">Projeto Pixes Art</h1>
-                <p className="explainProject">
-                  Primeiro projeto que realizei utilizando HTML/CSS. O modelo se da para que o usuário selecione uma cor e assim podendo pintar o quadro de pixels, utilizando sua imaginação poderá criar varia desenhos e formatos apenas com pixels!
-                </p>
-              </div>
-              </Link>
-            </div>
-
-            <div className="projectCard">
-              <Link to="/projectTrybeWarts">
-                <img src={imgTrybeWarts} alt="" className="projectImg" /> 
-              
-              <div className="spanProjects">
-                <h1 className="nameProject">Projeto Trybe Warts</h1>
-                <p className="explainProject">
-                  Projeto onde coloquei em prática meus estudos em organização de formulário, e o tema escolhido foi Harry Potter, onde o usuário faz seu cadastro de avaliação da própria página e preenchendo os dados de acordo com seus gostos e afinades na área de Desnvolvimento Web e atrações favoritas de Harry Potter! 
-                </p>
-              </div>
-              </Link>
-            </div>
-
             <div className="projectCard">
               <Link to="/projectShoppingCart">
                 <img src={imgShoppingCart} alt="" className="projectImg" />   

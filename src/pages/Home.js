@@ -73,15 +73,7 @@ class Home extends React.Component {
               <Link to="/projects">
                 <h1 id="titleOfProjects">Projetos</h1>  
               </Link>
-
-              <Link to="/projectPixelsArt">
-                <p className="projectsItem">Project Pixels Art</p>  
-              </Link>
-
-              <Link to="/projectTrybeWarts">
-                <p className="projectsItem">Project Trybe Warts</p>  
-              </Link>
-
+              
               <Link to="/projectShoppingCart">
                 <p className="projectsItem">Project Shopping Cart</p>   
               </Link>

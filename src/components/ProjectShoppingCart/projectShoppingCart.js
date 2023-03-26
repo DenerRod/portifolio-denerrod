@@ -1,5 +1,6 @@
 import React from "react";
 import "./projectShoppingCart.css"
+import "./projectShoppingCart-mobile.css"
 import imgSearch from "../../images/imgShoppingCart/seachIconWhite.png";
 import imgCartShopping from "../../images/imgShoppingCart/carrinho-de-compras.png";
 import {
@@ -7,7 +8,7 @@ import {
   searchProducts,
   getAllCategories,
 } from "../../utils/fetchAPIShoppingCart.js/fetchAPI";
-import iconCartList from "../../images/imgShoppingCart/iconCartList.png";
+import iconCartList from "../../images/imgShoppingCart/cartIcon.png";
 /* import Loading from "./Loading/loading"; */
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
@@ -71,10 +72,8 @@ class ShoppingCart extends React.Component {
 
     divSection
       .appendChild(
-        createCustomElement("button", "item__add", "Adicionar ao carrinho")
+        createCustomElement("button", "item__add", "Adicionar ao carrinho 🛒")
       )
-      .appendChild(createCustomElement("img", "cartIcon", "img")).src =
-      iconCartList;
     return section;
   };
 
@@ -125,12 +124,11 @@ class ShoppingCart extends React.Component {
   };
 
   handleClickSearch = async () => {
-    const { name } = this.props;
     const { createProductItemElement, newSearchResults } = this;
     const getInputSearch = document.querySelector(".searchInput");
     newSearchResults();
     if (getInputSearch.value === "") {
-      alert(`${name}, insira o nome do produto !`);
+      alert(`insira o nome do produto !`);
       this.componentDidMount();
     }
 
